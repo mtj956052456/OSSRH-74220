@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MTJApplication.iml" filepath="$PROJECT_DIR$/.idea/modules/MTJApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MTJApplication.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MTJApplication.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tools/MTJApplication.tools.iml" filepath="$PROJECT_DIR$/.idea/modules/tools/MTJApplication.tools.iml" />
+    </modules>
+  </component>
+</project>
