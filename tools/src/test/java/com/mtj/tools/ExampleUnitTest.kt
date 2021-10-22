@@ -1,4 +1,4 @@
-package com.mtj.tools
+package com.mtj.common
 
 import org.junit.Test
 

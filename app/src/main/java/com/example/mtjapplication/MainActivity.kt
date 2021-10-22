@@ -7,8 +7,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val sss = "孟先生"
-        val sss1 = "孟先生"
-        val sss2 = "孟先生"
+        //Lg.lgd("发布maven成功")
+//        CallMobilePop(this,"956052456").showPopupWindow()
+
     }
 }

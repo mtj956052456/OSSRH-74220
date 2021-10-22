@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MTJApplication.iml" filepath="$PROJECT_DIR$/.idea/modules/MTJApplication.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MTJApplication.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MTJApplication.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tools/MTJApplication.tools.iml" filepath="$PROJECT_DIR$/.idea/modules/tools/MTJApplication.tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MTJToolsResponse.iml" filepath="$PROJECT_DIR$/.idea/modules/MTJToolsResponse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MTJToolsResponse.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MTJToolsResponse.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tools/MTJToolsResponse.tools.iml" filepath="$PROJECT_DIR$/.idea/modules/tools/MTJToolsResponse.tools.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_80"
+    android:layout_gravity="bottom"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/solid_fff_top_dp3" />
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/dp_15"
+        android:layout_height="@dimen/dp_15"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/dp_5"
+        android:padding="@dimen/dp_2"
+        android:src="@mipmap/ic_close_grey" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvMobile"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/dp_3"
+        android:text="联系商家"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_8" />
+
+    <TextView
+        android:id="@+id/tvMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvCall"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/dp_3"
+        android:textColor="@color/text_font"
+        android:textSize="@dimen/sp_8"
+        tools:text="18317226872" />
+
+    <com.coorchice.library.SuperTextView
+        android:id="@+id/tvCall"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_20"
+        android:layout_above="@+id/tvCancel"
+        android:layout_marginBottom="@dimen/dp_3"
+        android:gravity="center"
+        android:text="呼叫"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_8"
+        app:stv_corner="@dimen/dp_30"
+        app:stv_isShowState2="true"
+        app:stv_solid="@color/colorPrimary"
+        app:stv_state_drawable2="@mipmap/ic_call_mobile"
+        app:stv_state_drawable2_height="@dimen/dp_10"
+        app:stv_state_drawable2_mode="left"
+        app:stv_state_drawable2_padding_left="@dimen/dp_70"
+        app:stv_state_drawable2_width="@dimen/dp_10" />
+
+
+    <com.coorchice.library.SuperTextView
+        android:id="@+id/tvCancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_20"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_3"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/text_font"
+        android:textSize="@dimen/sp_8"
+        app:stv_isShowState2="true"
+        app:stv_left_bottom_corner="true"
+        app:stv_right_bottom_corner="true"
+        app:stv_solid="@color/color_f5f7fa"
+        app:stv_state_drawable2="@mipmap/ic_grey_solid_close"
+        app:stv_state_drawable2_height="@dimen/dp_10"
+        app:stv_state_drawable2_mode="left"
+        app:stv_state_drawable2_padding_left="@dimen/dp_70"
+        app:stv_state_drawable2_width="@dimen/dp_10" />
+
+
+</RelativeLayout>
