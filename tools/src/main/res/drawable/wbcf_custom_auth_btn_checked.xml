@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle" >
-    <size
-        android:width="343dp"
-        android:height="44dp"/>
-    <corners android:radius="4dp"/>
-    <solid android:color="@color/wbcf_custom_auth_btn_checked_bg" />
-</shape>

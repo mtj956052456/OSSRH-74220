@@ -32,16 +32,8 @@
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
     <application android:requestLegacyExternalStorage="true">
-
-
-        <service android:name="com.amap.api.location.APSService" />
-
-
-        <activity
-            android:name=".video.VideoActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait" />
 
     </application>
 </manifest>

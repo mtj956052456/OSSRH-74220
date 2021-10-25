@@ -9,8 +9,8 @@ android {
     defaultConfig {
         minSdk 23
         targetSdk 29
-        versionCode 1
-        versionName "1.0"
+        versionCode 4
+        versionName "1.0.4"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
         multiDexEnabled true
@@ -18,12 +18,6 @@ android {
             abiFilters "armeabi", "armeabi-v7a"/*, "arm64-v8a", "x86", "arm64-v8a", "x86_64"*/
         }
     }
-
-//    sourceSets {
-//        main {
-//            jniLibs.srcDirs = ['libs']
-//        }
-//    }
 
     kotlinOptions {
         jvmTarget = "1.8"
@@ -37,89 +31,17 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-//    api 'androidx.core:core-ktx:1.3.2'
-//    api 'androidx.appcompat:appcompat:1.2.0'
-//    api "com.google.android.material:material:1.3.0"
-//    api "androidx.constraintlayout:constraintlayout:2.0.4"
-    api 'com.google.android.material:material:1.3.0'
-    api "androidx.recyclerview:recyclerview:1.2.0"
-    api "androidx.lifecycle:lifecycle-extensions:2.2.0"
-    api "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
-    api "androidx.lifecycle:lifecycle-runtime:2.2.0"
-    api "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-alpha05"
-    api "androidx.work:work-runtime:2.2.0"
-    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.0"
-    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1"
-    api "com.blankj:utilcodex:1.30.1"
-//    api "cn.jiguang.sdk:jpush:3.1.6"
-//    api "cn.jiguang.sdk:jmessage:2.9.0"
-//    api "cn.jiguang.sdk:jcore:2.0.0"
-    api "me.drakeet.multitype:multitype:3.4.4"
-    api "com.alibaba:arouter-api:1.4.0"
-    api "com.alibaba:arouter-compiler:1.2.1"
-    //api "com.jakewharton:butterknife:8.4.0"
-    //api "com.jakewharton:butterknife-compiler:8.4.0"
-    api "io.reactivex.rxjava2:rxandroid:2.0.2"
-    api "io.reactivex.rxjava2:rxjava:2.2.0"
-    api "com.squareup.okhttp3:okhttp:3.10.0"
-    api "com.squareup.okio:okio:1.14.0"
-    api "com.squareup.retrofit2:retrofit:2.9.0"
-    api "com.squareup.retrofit2:converter-gson:2.9.0"
-    api "com.google.code.gson:gson:2.8.6"
-//    api "com.github.getActivity:GsonFactory:5.2"
-    api "com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14"
-    api "com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-14"//没有使用特殊Header，可以不加这行
-    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
-    api "com.github.bumptech.glide:glide:4.11.0"
-    api "com.github.bumptech.glide:compiler:4.11.0"
-    api "jp.wasabeef:glide-transformations:4.3.0"
-    api "jp.co.cyberagent.android:gpuimage:2.1.0"
-    api "io.github.razerdp:BasePopup:2.2.30"
-    api "com.android.support:multidex:1.0.3"
-    api "org.greenrobot:eventbus:3.1.1"
-    api "com.yanzhenjie:album:2.1.3"
-    api "com.weigan:loopView:0.1.2"
-//    api "com.github.chrisbanes:PhotoView:2.1.3"
-    api "com.alibaba:fastjson:1.1.67.android"
-    api "de.hdodenhof:circleimageview:2.2.0"
-    api "com.yanzhenjie.permission:support:2.0.1"
-    api "com.permissionx.guolindev:permissionx:1.4.0"
-    api "com.journeyapps:zxing-android-embedded:3.6.0"
-    api "org.aspectj:aspectjrt:1.9.2"
-    api "com.bigkoo:convenientbanner:2.0.5"
-//    api "com.github.chenBingX:SuperTextView:v3.2.5"
-    api 'com.jacktuotuo.customview:verificationcodeview:1.0.5'//获取短信验证码输入框
-    api "androidx.viewpager2:viewpager2:1.0.0"
-    api "org.litepal.android:kotlin:3.0.0"
-//    api "com.github.CanHub:Android-Image-Cropper:3.1.0"
-    api "com.tencent:mmkv-static:1.2.7"
-    api 'com.amap.api:location:3.3.0'
-    api 'com.gyf.immersionbar:immersionbar:3.0.0'
-    api 'cn.jzvd:jiaozivideoplayer:7.7.0' //视频播放
-    api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:5.4.0'
-
-    api(name: 'alipaysdk-15.8.02.210308182128', ext: 'aar')
-    api(name: 'WbCloudFaceLiveSdk-v4.0.0-62755d76', ext: 'aar')
-    api(name: 'WbCloudNormal-v5.0.6-f2277ff', ext: 'aar')
-    api(name: 'Android-Image-Cropper-3.1.0', ext: 'aar')
-    api(name: 'GsonFactory-5.2', ext: 'aar')
-    api(name: 'PhotoView-2.1.3', ext: 'aar')
-    api(name: 'SuperTextView-v3.2.5.99', ext: 'aar')
 }
 
 //发布maven仓库需要以下代码
 buildscript {
     repositories {
-        maven { url 'https://jitpack.io' }
-        maven { url 'https://repo.huaweicloud.com/repository/maven' }
         google()
         mavenCentral()
     }
     dependencies {
-        //classpath 'com.android.tools.build:gradle:7.0.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.30"
         classpath 'com.vanniktech:gradle-maven-publish-plugin:0.18.0'
-        classpath "com.alibaba:arouter-register:1.0.2"
     }
 }
 

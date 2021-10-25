@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@mipmap/ic_check" android:state_selected="true" />
-    <item android:drawable="@drawable/oval_bd6469_solid_white_dp_0_5" android:state_selected="false" />
-</selector>
